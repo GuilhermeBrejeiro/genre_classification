@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.11.0-34-generic-x86_64-with-glibc2.10",
+    "python": "3.8.12",
+    "heartbeatAt": "2021-11-03T02:59:37.315530",
+    "startedAt": "2021-11-03T02:59:34.206065",
+    "docker": null,
+    "cpu_count": 1,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "data_train.csv:latest",
+        "--model_config",
+        "/home/guilherme/Desktop/genre_classification/outputs/2021-11-02/23-57-42/random_forest_config.yml",
+        "--export_artifact",
+        "model_export",
+        "--random_seed",
+        "42",
+        "--val_size",
+        "0.3",
+        "--stratify",
+        "genre"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/GuilhermeBrejeiro/genre_classification.git",
+        "commit": "31a25f266884872097cd4eb1824bae7dff3d6bcc"
+    },
+    "email": "juanbre@gmail.com",
+    "root": "/home/guilherme/Desktop/genre_classification",
+    "host": "guilherme-VirtualBox",
+    "username": "guilherme",
+    "executable": "/home/guilherme/miniconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/bin/python"
+}
