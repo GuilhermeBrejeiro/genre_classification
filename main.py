@@ -47,8 +47,8 @@ def go(config: DictConfig):
                 "input_artifact": "raw_data.parquet:latest",
                 "artifact_name": "preprocessed_data.csv",
                 "artifact_type": "preprocessed_data",
-                "artifact_description" "Data preprocessed":
-            }
+                "artifact_description": "Data preprocessed"
+            },
         )
 
     if "check_data" in steps_to_execute:
@@ -61,7 +61,7 @@ def go(config: DictConfig):
                 "reference_artifact": config["data"]["reference_dataset"],
                 "sample_artifact": "preprocessed_data.csv:latest",
                 "ks_alpha": config["data"]["ks_alpha"]
-            }
+            },
 
         )
 
@@ -77,7 +77,7 @@ def go(config: DictConfig):
                 "artifact_type": "segregated_data",
                 "test_size": config["data"]["test_size"],
                 "stratify": config["data"]["stratify"]
-            }
+            },
         )
 
     if "random_forest" in steps_to_execute:
@@ -99,7 +99,7 @@ def go(config: DictConfig):
                 "random_seed": config["main"]["random_seed"],
                 "val_size": config["data"]["test_size"],
                 "stratify": config["data"]["stratefy"]
-            }
+            },
         )
 
     if "evaluate" in steps_to_execute:
@@ -111,7 +111,7 @@ def go(config: DictConfig):
             parameters={
                 "model_export": f"{config["random_forest_pipeline"]["export_artifact"]}:latest",
                 "test_data": "data_test.csv:latest"
-            }
+            },
         )
 
 
