@@ -98,7 +98,7 @@ def go(config: DictConfig):
                 "export_artifact": config["random_forest_pipeline"]["export_artifact"],
                 "random_seed": config["main"]["random_seed"],
                 "val_size": config["data"]["test_size"],
-                "stratify": config["data"]["stratefy"]
+                "stratify": config["data"]["stratify"]
             },
         )
 

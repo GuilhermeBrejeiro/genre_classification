@@ -1,0 +1,15 @@
+artifact_uri: file:///home/guilherme/Desktop/genre_classification/mlruns/0/89d0b2b59f704b07bcd1993fb40ce6fb/artifacts
+end_time: 1635908156481
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 89d0b2b59f704b07bcd1993fb40ce6fb
+run_uuid: 89d0b2b59f704b07bcd1993fb40ce6fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1635908116388
+status: 3
+tags: []
+user_id: guilherme
